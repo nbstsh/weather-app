@@ -16,7 +16,7 @@ const fetchForecastAndRender = (address) => {
         return res.json()
     }).then(data => {
         if (data.error) throw new Error(data.error)
-        console.log({data})
+
         messageOne.textContent = data.location
         messageTwo.textContent = data.forecast
     }).catch(err => {
