@@ -7,7 +7,7 @@ const messageTwo = document.querySelector('#message-2')
 
 
 const fetchForecastAndRender = (address) => {
-    const url = `http://localhost:3000/weather?address=${address}`
+    const url = `/weather?address=${address}`
 
     messageOne.textContent = 'Loading.....'
     messageTwo.textContent = ''
